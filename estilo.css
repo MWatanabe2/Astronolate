@@ -1,0 +1,294 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(160, 215, 255);
+    font-family: monospace;
+    justify-content: center;
+    color: rgb(26, 6, 46);
+}
+
+header {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    background-color: rgb(26, 6, 46);
+    border-bottom: 4px solid black;
+}
+
+.logo {
+    height: 50px;
+    padding: 10px;
+    flex-grow: 1;
+}
+
+.menu {
+    display: flex;
+    flex-grow: 5;
+    gap: 100px;
+    flex-direction: row;
+    align-self:center;
+    justify-content:end;
+}
+
+main {
+    min-height: 100%;
+}
+
+.pagina {
+    padding: 10px;
+    text-decoration: none;
+    font-size: 17px;
+    border-radius: 7px;
+    color: rgb(160, 215, 255)
+}
+
+/* Página Principal */
+
+#principal{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.destaque {
+    font-family: monospace;
+    margin-left: 36%;
+    margin-bottom: 3%;
+    margin-top: 5%;
+    font-size: 300%;
+    color: rgb(12, 1, 22);
+}
+
+table {
+    border-collapse: collapse;
+}
+
+#juntar {
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap; 
+}
+
+td {
+    font-size: 17px;
+}
+
+tr .conteudo{
+    padding: 100px;
+    background-color: rgb(26, 6, 46);
+    border: 15px solid rgb(160, 215, 255);
+    color: rgb(160, 215, 255);
+}
+
+#texto {
+    margin-left: 20%;
+    padding-bottom: 0.5%;
+    font-size: 100%;
+}
+
+#foto {
+    width: 40%;
+    margin-left: 29%;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.img {
+    width: 75%;
+    border: 1px solid rgb(160, 215, 255);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+
+/* Sobre */
+
+#sobre {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+
+#minhafoto {
+    width: 95%;
+    margin-left: 50%;
+    border: 1px solid rgb(12, 1, 22);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+#descricao {
+    padding: 25px;
+    margin-right: 30%;
+    width: 50%;
+    background-color: rgb(230, 243, 252);
+    border: 1px solid rgb(26, 6, 46);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.divisao {
+    padding-left: 20%;
+}
+
+#sobremim{
+    font-family: monospace;
+    margin-left: 38%;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    font-size: 50px;
+    color: rgb(12, 1, 22);
+}
+
+/* Fale Conosco */
+
+#faleconosco {
+    height: 100%;
+}
+
+form {
+    margin-left: 36%;
+    margin-top: 3.3%;
+}
+
+.titulo {
+    justify-content: center;
+    margin-left: 37%;
+    margin-top: 100px;
+    padding-bottom: 35px;
+    font-family: monospace;
+    font-size: 45px;
+    color: rgb(12, 1, 22);
+}
+
+#subtitulo {
+    margin-left: 30%;
+    margin-top: 3.0%;
+    padding-bottom: 1%;
+    font-size: 16px;
+}
+
+fieldset{
+    border: 0;
+}
+
+#mensagem {
+    width: 360px;
+    height: 60px;
+}
+
+.alinhar {
+    display: flex;
+    justify-content:space-around;
+    flex-direction:row;
+}
+
+input, button, textarea{
+    border-radius: 5px;
+}
+
+.campo {
+    margin-bottom: 1em;
+}
+
+.campo label{
+    margin-bottom:0.2em;
+    font-size: 15px;
+    display:block;
+    color: rgb(26, 6, 46);
+}
+
+fieldset .campo .grupo {
+    float: left;
+    margin-right: 1em;
+}
+
+.campo input[type="text"], input[type="email"], input[type="tel"], textarea{
+    padding: 0.2em;
+    border: 1px solid rgb(26, 6, 46);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    display: block;
+}
+
+textarea {
+    max-width: 400px;
+    max-height: 125px;
+}
+
+.campo input:focus, .campo textarea:focus {
+    background-color: rgb(230, 243, 252);
+}
+
+.botao {
+    font-size: 1em;
+    background: rgb(49, 15, 186);;
+    border: 0;
+    margin-bottom: 1em;
+    color: white;
+    padding: 0.2em 0.6em;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    margin-top: 50px;
+    margin-left: 40px;
+    transform: translate(-50%, -50%);
+}
+
+.botao:hover{
+    background: rgb(69, 38, 193);
+    box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.2);
+    text-shadow: none;
+}
+
+.botao:active {
+    background-color: rgb(31, 8, 124);
+}
+
+#dados{
+    align-items: center;
+    justify-content: center;
+    margin-left: 35%;
+    font-size: 14px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-top: 10%;
+    width: 100%;
+    bottom: 0;
+    border-top: 1px solid black;
+    background-color: rgb(12, 1, 22);
+}
+
+.column {
+    flex-direction: column;
+}
+
+.footertext {
+    padding: 10px;
+    text-decoration: none;
+    font-size: 12px;
+    border-radius: 7px;
+    color: rgb(160, 215, 255);
+}
+
+.icon {
+    width: 40%;
+    padding: 10px;
+    border-radius: 7px;
+    text-decoration: none;
+    border: 1px solid rgb(160, 215, 255);
+}
+
+#link {
+    margin-left: 80%;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Fale Conosco</title>
+        <meta charset="UTF-8"/>
+        <link rel="stylesheet" href="estilo.css" />
+        <link rel="shortcut icon" href="midia\favicon_transparent_32x32.png" type="image/x-icon">
+    </head>
+
+    <body>
+        <header>
+            <a href="index.html">
+                <img class="logo" src="midia\default_transparent_765x625.png" title="Astrolate" alt="Logo">
+            </a>
+            <nav class="menu">
+                <a class="pagina" href="index.html">Página Principal</a>
+                <a class="pagina" href="sobre.html">Sobre</a>
+                <a class="pagina" href="faleconosco.html">Fale Conosco</a>
+            </nav>
+        </header>
+
+        <main id="faleconosco">
+            <div>
+                <h1 class="titulo">Fale Conosco</h1>
+                <p id="subtitulo">Ajude a melhorar o site com opiniões e críticas construtivas!</p>
+            </div>
+
+            <form>
+                <fiedset class="grupo">
+                    <div class="campo">
+                        <label for="nome"><strong>Nome*</strong></label>
+                        <input type="text" id="nome" name="nome" class="dados" required>
+                    </div>
+
+                </fiedset>
+                <div class="campo">
+                    <label for="email"><strong>E-mail*</strong></label>
+                    <input type="email" id="email" name="email" class="dados" required>
+                </div>
+
+                <div class="campo">
+                    <label for="telefone"><strong>Telefone*</strong></label>
+                    <input type="tel" id="telefone" name="telefone" class="dados" required>
+                </div>
+
+                <div class="campo">
+                    <br>
+                    <label for="mensagem"><strong>Mensagem:</strong></label>
+                    <textarea row="6" name="mensagem" id="mensagem"></textarea>
+                </div>
+                <button type="button" class="botao" onclick="imprimir()">Imprimir</button>
+                <button type="button" class="botao" onclick="validaImprime()">Validação</button>
+                <button type="button" class="botao" onclick="imprimeLista()">JSON</button>
+            </form>
+
+            <div id="dados"></div>
+
+        </main>
+
+        <footer>
+            <div class="column">
+                <p class="footertext">Telefone de Contato: +55 (21) 98246-6337</p>
+                <p class="footertext">E-mail de Contato: mwatanabefc@gmail.com</p>
+            </div>
+            <div id="link">
+                <a href="https://www.linkedin.com/in/mateus-watanabe?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+                    <img class="icon" src="midia/linkedin.png" title="LinkedIn" alt="LinkedIn">
+                </a>
+            </div>
+
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>
